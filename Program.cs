@@ -9,6 +9,12 @@ int estado;
 int idTarea;
 string descripcionTarea;
 int opcion;
+
+//generar tareas aleatorias
+for(int i=0 ; i<10 ; i++){
+    generarTareas();
+}
+
 Console.WriteLine("--- SISTEMA DE TAREAS ---");
 do{
     Console.WriteLine("0: Agregar Tarea\n1:Ver Tareas Pendientes\n2:Ver Tareas Realizadas\n3:Mover Tareas\n4:Buscar Tareas\n5:Salir");
@@ -81,9 +87,14 @@ void moverTareas(){
     verTareasPendientes();
     Console.WriteLine("Elija el ID de la tarea a mover: ");
     idTarea = int.Parse(Console.ReadLine());
-    tarea = tareasPendientes[idTarea];
-    tareasRealizadas.Add(tarea);
-    tareasPendientes.Remove(tarea);
+    for(int i=0 ; i<tareasPendientes.Count ; i++){
+        if(tareasPendientes[i].Id == idTarea){
+            tarea = tareasPendientes[idTarea];
+            tareasRealizadas.Add(tarea);
+            tareasPendientes.Remove(tarea);
+            break;
+        }
+    }
 }
 void buscarTarea(){
     Console.WriteLine("Escriba la descripcion de la tarea: "); 
@@ -97,9 +108,15 @@ void buscarTarea(){
         }
     }
 }
-
 void mostrarTarea(Tarea tarea){
     Console.WriteLine("ID: " + tarea.Id);
     Console.WriteLine("Descrripcion: " + tarea.Descripcion);
     Console.WriteLine("Duracion: " + tarea.Duracion);
+}
+void generarTareas(){
+    Random rand = new Random();
+    int duracion;
+    duracion = rand.Next(0, 30 + 1);
+    tarea = new Tarea("", duracion);
+    tareasPendientes.Add(tarea);
 }

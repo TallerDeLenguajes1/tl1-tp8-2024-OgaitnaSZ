@@ -12,3 +12,4 @@ C:\Users\santi\OneDrive\Desktop\tp8\tl1-tp8-2024-OgaitnaSZ\obj\Debug\net8.0\refi
 C:\Users\santi\OneDrive\Desktop\tp8\tl1-tp8-2024-OgaitnaSZ\obj\Debug\net8.0\tl1-tp8-2024-OgaitnaSZ.pdb
 C:\Users\santi\OneDrive\Desktop\tp8\tl1-tp8-2024-OgaitnaSZ\obj\Debug\net8.0\tl1-tp8-2024-OgaitnaSZ.genruntimeconfig.cache
 C:\Users\santi\OneDrive\Desktop\tp8\tl1-tp8-2024-OgaitnaSZ\obj\Debug\net8.0\ref\tl1-tp8-2024-OgaitnaSZ.dll
+C:\Users\santi\OneDrive\Desktop\tp8\tl1-tp8-2024-OgaitnaSZ\obj\Debug\net8.0\tl1-tp8-2024-OgaitnaSZ.sourcelink.json
