@@ -84,6 +84,7 @@ void verTareasRealizadas(){
     }
 }
 void moverTareas(){
+    int bandera = 0;
     verTareasPendientes();
     Console.WriteLine("Elija el ID de la tarea a mover: ");
     idTarea = int.Parse(Console.ReadLine());
@@ -94,6 +95,11 @@ void moverTareas(){
             tareasPendientes.Remove(tarea);
             break;
         }
+    }
+    if(bandera == 1){
+        Console.WriteLine("Tarea movida con exito");
+    }else{
+        Console.WriteLine("No se encontro tarea con ese ID");
     }
 }
 void buscarTarea(){
